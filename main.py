@@ -13,9 +13,7 @@ SCOPES = ['https://www.googleapis.com/auth/contacts.readonly']
 
 
 def main():
-    """Shows basic usage of the People API.
-    Prints the name of the first 10 connections.
-    """
+
     creds = None
 
     if os.path.exists('token.json'):
