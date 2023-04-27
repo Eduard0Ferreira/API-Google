@@ -45,11 +45,9 @@ def main():
 
         for person in connections:
             names = person.get('names', [])
-            emails = person.get('emailAddresses', [])
             if names:
                 name = names[0].get('displayName')
-                email = emails[0].get('emailAddresses')
-                print(f'Nome:{name}')
+                print(name)
     except HttpError as err:
         print(err)
 
